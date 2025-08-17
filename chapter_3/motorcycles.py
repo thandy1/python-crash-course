@@ -69,6 +69,7 @@ print(motorcycles)
 print(f"\nA {too_expensive.title()} is too expensive for me.")
 
 
-# --- Organizing a List ---
-# Sorting a List Permanently with the sort() Method
-cars = ["bmw", "audi", "toyota", "subaru"]
+# --- Avoiding Index Errors When Working with Lists ---
+motorcycles = ["honda", "yamaha", "suzuki"]
+print(motorcycles[3])  
+
