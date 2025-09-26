@@ -1,11 +1,21 @@
-favorite_languages = {
-    "jen": "python",
-    "sarah": "c",
-    "edward": "rust",
-    "phil": "python",
+users = {
+    "aeinstein": {
+        "first": "albert",
+        "last": "einstein",
+        "location": "princeton",
+    },
+    
+    "mcurie": {
+        "first": "marie",
+        "last": "curie",
+        "location": "paris",
+    },
 }
 
-print("The following languages have been mentioned:")
-for language in set(favorite_languages.values()):
-    print(f"{language.title()}")
+for username, user_info in users.items():
+    print(f"\nUsername: {username}")
+    full_name = f"{user_info["first"]} {user_info["last"]}"
+    location = user_info["location"]
 
+    print(f"\tFull name: {full_name.title()}")
+    print(f"\nLocation: {location.title()}")
