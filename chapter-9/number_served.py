@@ -16,14 +16,16 @@ class Restaurant:
     def increment_number_served(self, customers):
         self.number_served += customers
 
-restaurant = Restaurant("Sunset Grill", "American Cuisine")
+# Test code
+if __name__ == "__main__":
+    restaurant = Restaurant("Sunset Grill", "American Cuisine")
 
-restaurant.number_served = 10   # Manual change
-print(restaurant.number_served)
+    restaurant.number_served = 10   # Manual change
+    print(restaurant.number_served)
 
-restaurant.set_number_served(23)    # Use setter
-print(restaurant.number_served)
+    restaurant.set_number_served(23)    # Use setter
+    print(restaurant.number_served)
 
-restaurant.increment_number_served(10)  # Add 10 more served
-print(restaurant.number_served)
+    restaurant.increment_number_served(10)  # Add 10 more served
+    print(restaurant.number_served)
 
