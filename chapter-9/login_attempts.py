@@ -23,14 +23,16 @@ class User:
 # Instances
 user1 = User("john", "doe", 24, "workout")
 
+# Test code
+if __name__ == "__main__":
 # Increment login_attempt 3 times
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
+    user1.increment_login_attempts()
+    user1.increment_login_attempts()
+    user1.increment_login_attempts()
 
-# Display login_attempt
-print(user1.login_attempts)
+    # Display login_attempt
+    print(user1.login_attempts)
 
-# Reset login_attempt
-user1.reset_login_attempts()
-print(user1.login_attempts)
+    # Reset login_attempt
+    user1.reset_login_attempts()
+    print(user1.login_attempts)
