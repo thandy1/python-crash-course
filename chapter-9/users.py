@@ -18,14 +18,15 @@ user1 = User("john", "doe", 24, "workout")
 user2 = User("jane", "doe", 21, "sing")
 user3 = User("bob", "little", 39, "golf")
 
-# User 1 
-user1.greet_user()
-user1.describe_user()
+if __name__ == "__main__":
+    # User 1 
+    user1.greet_user()
+    user1.describe_user()
 
-# User 2 
-user2.greet_user()
-user2.describe_user()
+    # User 2 
+    user2.greet_user()
+    user2.describe_user()
 
-# User 3
-user3.greet_user()
-user3.describe_user()
+    # User 3
+    user3.greet_user()
+    user3.describe_user()
