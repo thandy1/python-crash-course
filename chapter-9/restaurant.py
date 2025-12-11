@@ -8,10 +8,12 @@ class Restaurant:
         
     def open_restaurant(self):
         print(f"{self.restaurant_name} is open.")
-        
-restaurant = Restaurant("Sunset Grill", "American Cuisine")
-print(restaurant.restaurant_name)
-print(restaurant.cuisine_type)
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+
+# Test Code
+if __name__ == "__main__":
+    restaurant = Restaurant("Sunset Grill", "American Cuisine")
+    print(restaurant.restaurant_name)
+    print(restaurant.cuisine_type)
+    restaurant.describe_restaurant()
+    restaurant.open_restaurant()
 
