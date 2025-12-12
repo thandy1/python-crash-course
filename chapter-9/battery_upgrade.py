@@ -1,4 +1,5 @@
 class Car:
+    """A simple attempt to represent a car."""
     def __init__(self, make, model, year):
         self.make = make
         self.model = model
@@ -23,6 +24,7 @@ class Car:
 
 
 class Battery:
+    """A simple attempt to model a battery for an electric car."""
     def __init__(self, battery_size=40):
         self.battery_size = battery_size
 
@@ -41,6 +43,7 @@ class Battery:
             self.battery_size = 65
 
 class ElectricCar(Car):
+    """Models aspects of a car, specific to electric vehicles."""
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
         self.battery = Battery()
