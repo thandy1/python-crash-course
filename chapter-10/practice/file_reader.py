@@ -4,6 +4,11 @@ from pathlib import Path
 # or provide a relative or absolute path to run the code
 path = Path("chapter-10/practice/pi_digits.txt")
 contents = path.read_text()
-lines = contents.splitlines()
-for line in lines:
-    print(line)
+contents.splitlines()
+
+pi_string = ''
+for line in contents.splitlines():
+    pi_string += line.lstrip()
+
+print(pi_string)
+print(len(pi_string))

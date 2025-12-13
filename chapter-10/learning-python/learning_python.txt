@@ -1,0 +1,2 @@
+In Python you can read form a file
+In Python you can use to path module to modify content in a file
